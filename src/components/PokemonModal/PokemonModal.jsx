@@ -8,7 +8,6 @@ import styles from './PokemonModal.module.css';
 const PokemonModal = ({ pokemon, isOpen, onClose, onAddToTeam }) => {
   useEffect(() => {
     if (isOpen) {
-      // Body scroll'unu engelle - sadece modal açıkken
       const originalOverflow = document.body.style.overflow;
       document.body.style.overflow = 'hidden';
       
@@ -57,7 +56,7 @@ const PokemonModal = ({ pokemon, isOpen, onClose, onAddToTeam }) => {
         <button className={styles.closeButton} onClick={onClose}>×</button>
         
         <div className={styles.modalBody}>
-          {/* Sol tarafta bilgiler */}
+       
           <div className={styles.infoSection}>
             <h2 className={styles.pokemonName}>{pokemon.name}</h2>
             <div className={styles.typeBadge}>
@@ -84,7 +83,6 @@ const PokemonModal = ({ pokemon, isOpen, onClose, onAddToTeam }) => {
             </div>
           </div>
 
-          {/* Sağ tarafta hareketli resim */}
           <div className={styles.imageSection}>
             <div className={styles.imageContainer}>
               <img

@@ -75,7 +75,7 @@ function App() {
     
     const pokemonName = pokemon.name;
     
-    // Eğer count 1 ise, Pokémon'u tamamen sil
+    
     if (pokemon.count === 1) {
       setTeam(team.filter(p => p.id !== id));
       toast.error(`${pokemonName} removed from your team`, {
@@ -88,7 +88,7 @@ function App() {
         progress: undefined,
       });
     } else {
-      // Eğer count > 1 ise, count'u azalt
+     
       setTeam(team.map(pokemon =>
         pokemon.id === id
           ? { ...pokemon, count: pokemon.count - 1 }

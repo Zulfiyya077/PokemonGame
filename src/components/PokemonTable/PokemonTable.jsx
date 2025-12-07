@@ -15,7 +15,7 @@ const PokemonTable = ({team }) => {
                 {team.map(pokemon => (
                     <tr key={pokemon.id}>
                         <td>{pokemon.name}</td>
-                        <td>{pokemon.type || 'N/A'}</td>
+                        <td>{pokemon.type}</td>
                         <td>{pokemon.count}</td>
                     </tr>
                 ))} 
