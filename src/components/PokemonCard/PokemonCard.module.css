@@ -1,0 +1,55 @@
+.pokemonCard {
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(26, 95, 63, 0.15);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(45, 134, 89, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.pokemonCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(26, 95, 63, 0.3);
+  border-color: #2d8659;
+  filter: brightness(1.1);
+}
+
+.pokemonImage {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  display: block;
+}
+
+.pokemonCard:hover .pokemonImage {
+  transform: scale(1.12) rotate(3deg);
+}
+
+.pokemonName {
+  margin: 8px 0;
+  color: #1a5f3f;
+  font-size: 0.9rem;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+/* Button wrapper to ensure it's above the ::before pseudo-element */
+.pokemonCard > * {
+  position: relative;
+  z-index: 2;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+

@@ -1,0 +1,172 @@
+.btn {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* SIZE VARIANTS */
+.btnSmall {
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  border-radius: 6px;
+}
+
+.btnMedium {
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+}
+
+.btnLarge {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+/* COLOR VARIANTS */
+.btnPrimary {
+  background: linear-gradient(135deg, #2d8659 0%, #1a5f3f 100%);
+  color: white;
+}
+
+.btnPrimary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1a5f3f 0%, #2d8659 100%);
+  box-shadow: 0 4px 15px rgba(26, 95, 63, 0.5);
+}
+
+.btnSuccess {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+}
+
+.btnSuccess:hover:not(:disabled) {
+  background: linear-gradient(135deg, #218838 0%, #17a589 100%);
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+}
+
+.btnDanger {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+}
+
+.btnDanger:hover:not(:disabled) {
+  background: linear-gradient(135deg, #c82333 0%, #bd2130 100%);
+  box-shadow: 0 4px 15px rgba(220, 53, 69, 0.4);
+}
+
+.btnWarning {
+  background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+  color: white;
+}
+
+.btnWarning:hover:not(:disabled) {
+  background: linear-gradient(135deg, #ffb300 0%, #ff8f00 100%);
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+}
+
+.btnInfo {
+  background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+  color: white;
+}
+
+.btnInfo:hover:not(:disabled) {
+  background: linear-gradient(135deg, #138496 0%, #117a8b 100%);
+  box-shadow: 0 4px 15px rgba(23, 162, 184, 0.4);
+}
+
+/* FULL WIDTH */
+.btnFullWidth {
+  width: 100%;
+}
+
+/* SQUARE BUTTONS */
+.btnSquare {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+
+.btnSquare.btnLarge {
+  width: 42px;
+  height: 42px;
+  font-size: 1.4rem;
+}
+
+.btnSquare.btnSmall {
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+}
+
+.btnSquare.btnSuccess:hover:not(:disabled) {
+  transform: scale(1.1) rotate(90deg);
+}
+
+.btnSquare.btnWarning:hover:not(:disabled) {
+  transform: scale(1.1) rotate(-90deg);
+}
+
+/* CIRCULAR BUTTONS */
+.btnCircular {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnCircular.btnSmall {
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+}
+
+.btnCircular.btnMedium {
+  width: 38px;
+  height: 38px;
+  font-size: 1.3rem;
+}
+
+.btnCircular.btnLarge {
+  width: 46px;
+  height: 46px;
+  font-size: 1.5rem;
+}
+
+.btnCircular.btnSuccess:hover:not(:disabled) {
+  transform: scale(1.1) rotate(90deg);
+}
+
+.btnCircular.btnWarning:hover:not(:disabled) {
+  transform: scale(1.1) rotate(-90deg);
+}
+
